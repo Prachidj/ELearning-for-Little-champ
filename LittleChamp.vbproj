@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84B69DBF-EE77-4782-A560-4CDE0BDD4BB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LittleChamp.My.MyApplication</StartupObject>
+    <RootNamespace>LittleChamp</RootNamespace>
+    <AssemblyName>LittleChamp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LittleChamp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LittleChamp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alphabet.Designer.vb">
+      <DependentUpon>alphabet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alphabet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Birds.Designer.vb">
+      <DependentUpon>Birds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Birds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLORS.Designer.vb">
+      <DependentUpon>COLORS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLORS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daysofweek.Designer.vb">
+      <DependentUpon>daysofweek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="daysofweek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Esong.Designer.vb">
+      <DependentUpon>Esong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Esong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam.Designer.vb">
+      <DependentUpon>Exam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamCurrency.Designer.vb">
+      <DependentUpon>ExamCurrency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExamCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamFruits.Designer.vb">
+      <DependentUpon>ExamFruits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExamFruits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamNum.Designer.vb">
+      <DependentUpon>ExamNum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExamNum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamVegetable.Designer.vb">
+      <DependentUpon>ExamVegetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExamVegetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimal.Designer.vb">
+      <DependentUpon>FrmAnimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnimal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExam.Designer.vb">
+      <DependentUpon>FrmExam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsongselection.Designer.vb">
+      <DependentUpon>frmsongselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsongselection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudLogin.Designer.vb">
+      <DependentUpon>FrmStudLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWelcome.Designer.vb">
+      <DependentUpon>FrmWelcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWelcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Esong.Designer.vb">
+      <DependentUpon>Frm_Esong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Esong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Jsong.Designer.vb">
+      <DependentUpon>Frm_Jsong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Jsong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Study.Designer.vb">
+      <DependentUpon>Frm_Study.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Study.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRUITS.Designer.vb">
+      <DependentUpon>FRUITS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRUITS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="indiancurrency.Designer.vb">
+      <DependentUpon>indiancurrency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="indiancurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.vb">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="monthOfTheYear.Designer.vb">
+      <DependentUpon>monthOfTheYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="monthOfTheYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="numbers.Designer.vb">
+      <DependentUpon>numbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="numbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shapes.Designer.vb">
+      <DependentUpon>shapes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shapes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmileyFace.Designer.vb">
+      <DependentUpon>SmileyFace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SmileyFace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud_Reg.Designer.vb">
+      <DependentUpon>Stud_Reg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stud_Reg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vegetable.Designer.vb">
+      <DependentUpon>Vegetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vegetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vegetables.Designer.vb">
+      <DependentUpon>vegetables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vegetables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle.Designer.vb">
+      <DependentUpon>Vehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="alphabet.resx">
+      <DependentUpon>alphabet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Birds.resx">
+      <DependentUpon>Birds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLORS.resx">
+      <DependentUpon>COLORS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daysofweek.resx">
+      <DependentUpon>daysofweek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esong.resx">
+      <DependentUpon>Esong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam.resx">
+      <DependentUpon>Exam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamCurrency.resx">
+      <DependentUpon>ExamCurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamFruits.resx">
+      <DependentUpon>ExamFruits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamNum.resx">
+      <DependentUpon>ExamNum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamVegetable.resx">
+      <DependentUpon>ExamVegetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnimal.resx">
+      <DependentUpon>FrmAnimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExam.resx">
+      <DependentUpon>FrmExam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsongselection.resx">
+      <DependentUpon>frmsongselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudLogin.resx">
+      <DependentUpon>FrmStudLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWelcome.resx">
+      <DependentUpon>FrmWelcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Esong.resx">
+      <DependentUpon>Frm_Esong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Jsong.resx">
+      <DependentUpon>Frm_Jsong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Study.resx">
+      <DependentUpon>Frm_Study.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRUITS.resx">
+      <DependentUpon>FRUITS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="indiancurrency.resx">
+      <DependentUpon>indiancurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monthOfTheYear.resx">
+      <DependentUpon>monthOfTheYear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="numbers.resx">
+      <DependentUpon>numbers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shapes.resx">
+      <DependentUpon>shapes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmileyFace.resx">
+      <DependentUpon>SmileyFace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud_Reg.resx">
+      <DependentUpon>Stud_Reg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vegetable.resx">
+      <DependentUpon>Vegetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vegetables.resx">
+      <DependentUpon>vegetables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle.resx">
+      <DependentUpon>Vehicle.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="obj\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
